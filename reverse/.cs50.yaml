@@ -1,15 +1,18 @@
 check50:
   checks:
-    reverse:
+    reverse0:
       - run: python3 reverse.py
         stdin: happy
         stdout: yppah
+    reverse1:
       - run: python3 reverse.py
         stdin: Python
         stdout: nohtyP
+    reverse2:
       - run: python3 reverse.py
         stdin: 
         stdout: 
+    reverse3:
       - run: python3 reverse.py
         stdin: a
         stdout: a
