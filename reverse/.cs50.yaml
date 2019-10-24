@@ -1,18 +1,18 @@
 check50:
   checks:
-    reverse0:
+    prints yppah for happy:
       - run: python3 reverse.py
         stdin: happy
         stdout: yppah
-    reverse1:
+    prints nohtyP for Python:
       - run: python3 reverse.py
         stdin: Python
         stdout: nohtyP
-    reverse2:
+    prints empty string for empty string:
       - run: python3 reverse.py
         stdin: 
         stdout: 
-    reverse3:
+    prints a for a:
       - run: python3 reverse.py
         stdin: a
         stdout: a
