@@ -1,0 +1,6 @@
+check50:
+  checks:
+    reverse:
+      - run: python3 reverse.py
+        stdin: happy
+        stdout: yppah
