@@ -4,3 +4,12 @@ check50:
       - run: python3 reverse.py
         stdin: happy
         stdout: yppah
+      - run: python3 reverse.py
+        stdin: Python
+        stdout: nohtyP
+      - run: python3 reverse.py
+        stdin: 
+        stdout: 
+      - run: python3 reverse.py
+        stdin: a
+        stdout: a
