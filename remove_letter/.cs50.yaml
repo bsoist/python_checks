@@ -1,36 +1,36 @@
 check50:
   checks:
-    Removes a from apple
+    Removes a from apple:
       - run: python3 remove_letter.py
         stdin: 
           - apple
           - a
         stdout: pple
-    Removes a from banana
+    Removes a from banana:
       - run: python3 remove_letter.py
         stdin: 
           - banana
           - a
         stdout: bnn
-    Prints banana when removing z from banana
+    Prints banana when removing z from banana:
       - run: python3 remove_letter.py
         stdin: 
           - banana
           - z
         stdout: banana
-    Removes i from Mississippi
+    Removes i from Mississippi:
       - run: python3 remove_letter.py
         stdin: 
           - Mississippi
           - i
         stdout: Msssspp
-    Prints empty string when trying to remove b
+    Prints empty string when trying to remove b:
       - run: python3 remove_letter.py
         stdin: 
           - 
           - b
         stdout: 
-    Prints single letter string when trying to remove char that doesn't exist
+    Prints single letter string when trying to remove char that doesn't exist:
       - run: python3 remove_letter.py
         stdin: 
           - c
