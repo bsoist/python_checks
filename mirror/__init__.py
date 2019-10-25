@@ -25,7 +25,8 @@ def python():
 @check50.check()
 def empty():
     check50.run("python3 mirror.py"
-    ).stdin("", prompt='Word? '
+    ).stdout('Word? '
+    ).stdin("", prompt=True
     ).stdout("", regex=False
     ).exit()
 
