@@ -30,7 +30,7 @@ check50:
           - 
           - b
         stdout: 
-    Prints single letter string when trying to remove char that doesn't exist:
+    Prints single letter string when trying to remove non-existent char:
       - run: python3 remove_letter.py
         stdin: 
           - c
