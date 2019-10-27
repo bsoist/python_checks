@@ -9,6 +9,7 @@ def exists():
 @check50.check()
 def good():
     check50.run("python3 mirror.py"
+    ).stdout('Word? '
     ).stdin("good", prompt=False
     ).stdout("gooddoog", regex=False
     ).exit()
@@ -17,6 +18,7 @@ def good():
 @check50.check()
 def python():
     check50.run("python3 mirror.py"
+    ).stdout('Word? '
     ).stdin("Python", prompt=False
     ).stdout("PythonnohtyP", regex=False
     ).exit()
@@ -34,6 +36,7 @@ def empty():
 @check50.check()
 def single():
     check50.run("python3 mirror.py"
+    ).stdout('Word? '
     ).stdin("a", prompt=False
     ).stdout("aa", regex=False
     ).exit()
