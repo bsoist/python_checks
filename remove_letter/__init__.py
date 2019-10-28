@@ -22,7 +22,7 @@ def Removes_a_from_banana():
     check50.run("python3 remove_letter.py"
         ).stdin("banana", prompt=True
         ).stdin("a", prompt=True
-        ).stdout("bnn", regex=False
+        ).stdout("bnana", regex=False
         ).exit()
 
 #remove_letter("z", "banana") == "banana"
@@ -42,7 +42,7 @@ def Removes_i_from_Mississippi():
     check50.run("python3 remove_letter.py"
         ).stdin("Mississippi", prompt=True
         ).stdin("i", prompt=True
-        ).stdout("Msssspp", regex=False
+        ).stdout("Mssisssippi", regex=False
         ).exit()
 
 #remove_letter("b", "") = ""
