@@ -11,7 +11,7 @@ def good():
     """Prints gooddoog for good"""
     check50.run("python3 mirror.py"
     ).stdout('Word? '
-    ).stdin("good", prompt=False
+    ).stdin("good", prompt=True
     ).stdout("gooddoog", regex=False
     ).exit()
 
@@ -21,7 +21,7 @@ def python():
     """Prints PythonnohtyP for Python"""
     check50.run("python3 mirror.py"
     ).stdout('Word? '
-    ).stdin("Python", prompt=False
+    ).stdin("Python", prompt=True
     ).stdout("PythonnohtyP", regex=False
     ).exit()
 
@@ -41,6 +41,6 @@ def single():
     """Handles a single char string"""
     check50.run("python3 mirror.py"
     ).stdout('Word? '
-    ).stdin("a", prompt=False
+    ).stdin("a", prompt=True
     ).stdout("aa", regex=False
     ).exit()
