@@ -35,7 +35,7 @@ def iss_missississippi():
         ).stdout("Missippi", regex=False
         ).exit()
 
-test(remove("eggs", "bicycle") == "bicycle")
+#test(remove("eggs", "bicycle") == "bicycle")
 @check50.check()
 def substring_not_exists():
     """Prints original word when substring not present"""
