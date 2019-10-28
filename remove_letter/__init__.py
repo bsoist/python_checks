@@ -42,7 +42,7 @@ def Removes_i_from_Mississippi():
     check50.run("python3 remove_letter.py"
         ).stdin("Mississippi", prompt=True
         ).stdin("i", prompt=True
-        ).stdout("Mssisssippi", regex=False
+        ).stdout("Mssissippi", regex=False
         ).exit()
 
 #remove_letter("b", "") = ""
