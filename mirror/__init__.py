@@ -10,7 +10,6 @@ def exists():
 def good():
     """Prints gooddoog for good"""
     check50.run("python3 mirror.py"
-    ).stdout('Word? '
     ).stdin("good", prompt=True
     ).stdout("gooddoog", regex=False
     ).exit()
@@ -20,7 +19,6 @@ def good():
 def python():
     """Prints PythonnohtyP for Python"""
     check50.run("python3 mirror.py"
-    ).stdout('Word? '
     ).stdin("Python", prompt=True
     ).stdout("PythonnohtyP", regex=False
     ).exit()
@@ -30,7 +28,6 @@ def python():
 def empty():
     """Prints empty string for empty string""" 
     check50.run("python3 mirror.py"
-    ).stdout('Word? '
     ).stdin("", prompt=True
     ).stdout("", regex=False
     ).exit()
@@ -40,7 +37,6 @@ def empty():
 def single():
     """Handles a single char string"""
     check50.run("python3 mirror.py"
-    ).stdout('Word? '
     ).stdin("a", prompt=True
     ).stdout("aa", regex=False
     ).exit()
