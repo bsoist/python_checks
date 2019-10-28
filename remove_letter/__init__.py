@@ -10,10 +10,8 @@ def exists():
 def Removes_a_from_apple():
     """Removes a from apple"""
     check50.run("python3 remove_letter.py"
-        ).stdout("Word? ", regex=False
-        ).stdin("apple", prompt=False
-        ).stdout("Letter? ", regex=False
-        ).stdin("a", prompt=False
+        ).stdin("apple", prompt=True
+        ).stdin("a", prompt=True
         ).stdout("pple", regex=False
         ).exit()
 
@@ -22,10 +20,8 @@ def Removes_a_from_apple():
 def Removes_a_from_banana():
     """Removes a from banana"""
     check50.run("python3 remove_letter.py"
-        ).stdout("Word? ", regex=False
-        ).stdin("banana", prompt=False
-        ).stdout("Letter? ", regex=False
-        ).stdin("a", prompt=False
+        ).stdin("banana", prompt=True
+        ).stdin("a", prompt=True
         ).stdout("bnn", regex=False
         ).exit()
 
@@ -34,10 +30,8 @@ def Removes_a_from_banana():
 def Prints_banana_when_removing_z_from_banana():
     """Prints banana when removing z from banana"""
     check50.run("python3 remove_letter.py"
-        ).stdout("Word? ", regex=False
-        ).stdin("banana", prompt=False
-        ).stdout("Letter? ", regex=False
-        ).stdin("z", prompt=False
+        ).stdin("banana", prompt=True
+        ).stdin("z", prompt=True
         ).stdout("banana", regex=False
         ).exit()
 
@@ -46,10 +40,8 @@ def Prints_banana_when_removing_z_from_banana():
 def Removes_i_from_Mississippi():
     """Removes i from Mississippi"""
     check50.run("python3 remove_letter.py"
-        ).stdout("Word? ", regex=False
-        ).stdin("Mississippi", prompt=False
-        ).stdout("Letter? ", regex=False
-        ).stdin("i", prompt=False
+        ).stdin("Mississippi", prompt=True
+        ).stdin("i", prompt=True
         ).stdout("Msssspp", regex=False
         ).exit()
 
@@ -58,10 +50,8 @@ def Removes_i_from_Mississippi():
 def Prints_empty_string_when_trying_to_remove_b():
     """Prints empty string when trying to remove b"""
     check50.run("python3 remove_letter.py"
-        ).stdout("Word? ", regex=False
-        ).stdin("None", prompt=False
-        ).stdout("Letter? ", regex=False
-        ).stdin("b", prompt=False
+        ).stdin("None", prompt=True
+        ).stdin("b", prompt=True
         ).stdout("None", regex=False
         ).exit()
 
@@ -70,9 +60,7 @@ def Prints_empty_string_when_trying_to_remove_b():
 def Prints_single_letter_string_when_trying_to_remove_non_existent_char():
     """Prints single letter string when trying to remove non-existent char"""
     check50.run("python3 remove_letter.py"
-        ).stdout("Word? ", regex=False
-        ).stdin("c", prompt=False
-        ).stdout("Letter? ", regex=False
-        ).stdin("b", prompt=False
+        ).stdin("c", prompt=True
+        ).stdin("b", prompt=True
         ).stdout("c", regex=False
         ).exit()
