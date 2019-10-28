@@ -2,7 +2,7 @@ import check50
 
 @check50.check()
 def exists():
-    """File palindrome.py exists"""
+    """File palindrome.py exxxxists"""
     check50.exists("palindrome.py")
 
 #is_palindrome("abba")
