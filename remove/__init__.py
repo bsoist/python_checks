@@ -10,10 +10,8 @@ def exists():
 def an_banana():
     """Removes an from banana"""
     check50.run("python3 remove.py"
-        ).stdout("Word? ", regex=False
-        ).stdin("banana", prompt=False
-        ).stdout("Substring? ", regex=False
-        ).stdin("an", prompt=False
+        ).stdin("banana", prompt=True
+        ).stdin("an", prompt=True
         ).stdout("bana", regex=False
         ).exit()
 
@@ -22,10 +20,8 @@ def an_banana():
 def cyc_bicycle():
     """Removes cyc from bicycle"""
     check50.run("python3 remove.py"
-        ).stdout("Word? ", regex=False
-        ).stdin("bicycle", prompt=False
-        ).stdout("Substring? ", regex=False
-        ).stdin("cyc", prompt=False
+        ).stdin("bicycle", prompt=True
+        ).stdin("cyc", prompt=True
         ).stdout("bile", regex=False
         ).exit()
 
@@ -34,10 +30,8 @@ def cyc_bicycle():
 def iss_missississippi():
     """Removes iss from Mississippi"""
     check50.run("python3 remove.py"
-        ).stdout("Word? ", regex=False
-        ).stdin("Mississippi", prompt=False
-        ).stdout("Substring? ", regex=False
-        ).stdin("iss", prompt=False
+        ).stdin("Mississippi", prompt=True
+        ).stdin("iss", prompt=True
         ).stdout("Missippi", regex=False
         ).exit()
 
@@ -46,9 +40,7 @@ test(remove("eggs", "bicycle") == "bicycle")
 def substring_not_exists():
     """Prints original word when substring not present"""
     check50.run("python3 remove.py"
-        ).stdout("Word? ", regex=False
-        ).stdin("bicycle", prompt=False
-        ).stdout("Substring? ", regex=False
-        ).stdin("eggs", prompt=False
+        ).stdin("bicycle", prompt=True
+        ).stdin("eggs", prompt=True
         ).stdout("bicycle", regex=False
         ).exit()
