@@ -2,7 +2,7 @@ import check50
 
 @check50.check()
 def exists():
-    """File remove_letter.py exists"""
+    """File remove_all.py exists"""
     check50.exists("remove_all.py")
 
 #remove_all("an", "banana") == "ba"
